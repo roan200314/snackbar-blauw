@@ -22,7 +22,7 @@ require "database.php";
             <h1 class="topname">snackbar blauw</h1>
             <a href="registreren.php">Registreren</a>
             <a href="inloggen.php">Inloggen</a>
-            <a class="active" href="Homepagina.php">Home</a>
+            <a class="active" href="index.php">Home</a>
         </div>
 
 

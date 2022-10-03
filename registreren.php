@@ -18,7 +18,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <title>registreren snackbar</title>
@@ -28,11 +28,9 @@ session_start();
 
     <body style="background-color: white;">
         <div class="topnav">
-            <h1 class="topname">melding management</h1>
+            <h1 class="topname">Snackbar</h1>
             <a class="active" href="registreren.php">Registreren</a>
             <a href="inloggen.php">Inloggen</a>
-            <a href="gebruiker-Overzicht.php">gebruikers overzicht</a>
-            <a href="meldingen.php">melding maken</a>
             <?php
             if (!empty($_SESSION['userData'])) {
                 if ($_SESSION["userData"]["role"] == "medewerker") {
@@ -40,7 +38,7 @@ session_start();
                     <a href="categorie-overzicht.php">categorie overzicht </a> <?php
                                                                             }
                                                                         } ?>
-            <a href="Homepagina.php">Home</a>
+            <a href="index.php">Home</a>
         </div>
 
         <div class="Hero">

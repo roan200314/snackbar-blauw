@@ -1,0 +1,424 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    /*background-color: #333;*/
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: red;
+    text-align: center;
+    padding: 16px 14px;
+    text-decoration: solid;
+    font-size: 25px;
+    font-family: "nunito", sans-serif;
+  }
+  
+  .topnav .topname {
+    float: left;
+    margin-top: 10px;
+    margin-left: 38px;
+    font-size: 37px;
+    color: green;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  .topnav .topname2 {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 37px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  .topnav .topname3 {
+    float: left;
+    margin-top: 10px;
+    font-size: 37px;
+    color: red;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #4caf50;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04aa6d;
+    color: red;
+  }
+  
+  .Hero {
+    margin-top: 5px;
+    font-family: "nunito", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-size: cover;
+    margin-bottom: 5px;
+    justify-content: center;
+    display: flex;
+    color: #04aa6d;
+    padding-left: 30px;
+  }
+  
+  #txt {
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    text-shadow: 15px;
+    font-weight: bold;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    display: flex;
+    left: 50;
+  }
+  
+  .right {
+    right: 0;
+    justify-content: right;
+  
+    background-repeat: no-repeat;
+  }
+  
+  .S5 {
+    height: 300px;
+    width: 40%;
+    float: left;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    padding-left: 5%;
+    margin-top: 45px;
+  }
+  
+  .S6 {
+    height: 300px;
+    width: 48%;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    padding-right: 500px;
+    margin-top: 45px;
+    width: 300px;
+    background-repeat: no-repeat;
+  }
+  
+  .S7 {
+    height: 300px;
+    width: 40%;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    padding-right: 6%;
+    margin-top: 45px;
+  }
+  .S8 {
+    height: 300px;
+    width: 48%;
+    float: left;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    margin-top: 45px;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    margin-left: 68px;
+  }
+  
+  .afhaalfoto {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  
+  .hierfoto {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  
+  .bestelfoto {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  
+  .kopjes {
+    padding-left: 150px;
+  }
+  
+  #bezorging:hover {
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  #afhaling:hover {
+    background-color: #04aa6d;
+    color: black;
+  }
+  
+  #reserveerSuite:hover {
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  #bezorging {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #04aa6d;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #bezorging span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #bezorging span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #bezorging:hover span {
+    padding-right: 25px;
+  }
+  
+  #bezorging:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  #afhaling {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #04aa6d;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #afhaling span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #afhaling span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #afhaling:hover span {
+    padding-right: 25px;
+  }
+  
+  #afhaling:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  #suity {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #04aa6d;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #suity span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #suity span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #suity:hover span {
+    padding-right: 25px;
+  }
+  
+  #suity:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  #menu {
+    display: none;
+  }
+  
+  #menu1 {
+    display: none;
+  }
+  
+  #menu2 {
+    display: none;
+  }
+  
+  
+  #bevestigingstekst {
+    display: none;
+  }
+  
+  #annuleerBtn {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid darkred;
+    float: right;
+    margin-top: 206px;
+    margin-left: 150px;
+    width: max-content;
+  }
+  
+  #annuleerBtn:hover {
+    background-color: darkred;
+    color: black;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  input[type="text"],
+  input[type="adres"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
