@@ -22,6 +22,14 @@ session_start();
             <h1 class="topname">Snackbar</h1>
             <a href="registreren.php">Registreren</a>
             <a class="active" href="inloggen.php">Inloggen</a>
+            <?php
+            if (!empty($_SESSION['userData'])) {
+                if ($_SESSION["userData"]["role"] == "medewerker") {
+            ?>
+                    <a href="overzicht.php">product overzicht </a>
+                    <a href="snackmaak.php">snack maken</a><?php
+                                                        }
+                                                    } ?>
             <a href="index.php">Home</a>
         </div>
 

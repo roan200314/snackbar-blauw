@@ -20,7 +20,7 @@
     margin-top: 10px;
     margin-left: 38px;
     font-size: 37px;
-    color: green;
+    color: blue;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
   .topnav .topname2 {
@@ -41,12 +41,12 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    color: #4caf50;
+    color: blue;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04aa6d;
+    background-color: darkblue;
     color: red;
   }
   
@@ -61,7 +61,7 @@
     margin-bottom: 5px;
     justify-content: center;
     display: flex;
-    color: #04aa6d;
+    color: blue;
     padding-left: 30px;
   }
   
@@ -174,35 +174,7 @@
     padding-left: 150px;
   }
   
-  #bezorging:hover {
-    background-color: #04aa6d;
-    color: white;
-  }
-  
-  #afhaling:hover {
-    background-color: #04aa6d;
-    color: black;
-  }
-  
-  #reserveerSuite:hover {
-    background-color: #04aa6d;
-    color: white;
-  }
-  
-  #bezorging {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #04aa6d;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
+
   
   #bezorging span {
     cursor: pointer;
@@ -229,20 +201,7 @@
     right: 0;
   }
   
-  #afhaling {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #04aa6d;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
+
   
   #afhaling span {
     cursor: pointer;
@@ -269,20 +228,7 @@
     right: 0;
   }
   
-  #suity {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #04aa6d;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
+
   
   #suity span {
     cursor: pointer;
@@ -376,7 +322,7 @@
   }
   
   button {
-    background-color: #04aa6d;
+    background-color: blue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

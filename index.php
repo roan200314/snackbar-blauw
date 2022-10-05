@@ -1,5 +1,6 @@
 <?php
 require "database.php";
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,20 +20,61 @@ require "database.php";
 
     <body style="background-color: white;">
         <div class="topnav">
-            <h1 class="topname">snackbar blauw</h1>
+            <h1 class="topname">Snackbar</h1>
             <a href="registreren.php">Registreren</a>
             <a href="inloggen.php">Inloggen</a>
+            <?php
+            if (!empty($_SESSION['userData'])) {
+                if ($_SESSION["userData"]["role"] == "medewerker") {
+            ?>
+                    <a href="overzicht.php">product overzicht </a>
+                    <a href="snackmaak.php">snack maken</a><?php
+                                                        }
+                                                    } ?>
             <a class="active" href="index.php">Home</a>
         </div>
 
+        <?php
+            if (!empty($_SESSION['userData'])) {
+                if ($_SESSION["userData"]["role"] == "medewerker" || "gebruiker") {
 
+        $sql = "SELECT * FROM snacks ";
+
+        if ($result = mysqli_query($mysqli, $sql)) {
+            $snacks = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        }
+        ?>
+        <table class="table">
+            <thead>
+                <h4>snacks</h4>
+                <tr>
+                    <th>name</th>
+                    <th>selling price</th>
+                    <th>category</th>
+                </tr>
+            </thead>
+            <?php foreach ($snacks as $snack) : ?>
+                <tr>
+                    <td><?php echo $snack["name"] ?></td>
+                    <td>$<?php echo $snack["selling_price"] ?></td>
+                    <td><?php echo $snack["category"] ?></td>
+                    <td>
+                        <img src="images/<?php echo $snack["image"] ?>" alt="" width="300" height="200">
+
+                    </td>
+                </tr>
+
+            <?php endforeach; ?>
+            </tbody>
+                </table>
+            <?php } }?>
 
             <form action="logout.php" method="post">
                 <button type="submit" value="submit">uitloggen</button>
             </form>
 
 
-        </main>
+            </main>
 
     </body>
 
