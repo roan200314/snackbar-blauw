@@ -43,8 +43,8 @@ session_start();
                 <h4>snacks</h4>
                 <tr>
                     <th>name</th>
-                    <th>cost price /</th>
-                    <th>selling price /</th>
+                    <th>cost price</th>
+                    <th>selling price</th>
                     <th>category</th>
                 </tr>
             </thead>
@@ -56,8 +56,14 @@ session_start();
                     <td> / <?php echo $users["category"] ?></td><br>
                     <td><a href="snack-delete.php?id=<?php echo $users["id"] ?>" class="btn btn-danger">Delete</a></td>
                 </tr>
-
             <?php endforeach; ?>
+            <?php
+            $sql = "SELECT * FROM orders ";
+            
+            if ($result = mysqli_query($mysqli, $sql)) {
+                $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            }
+            ?>
     </body>
 
 </html>
