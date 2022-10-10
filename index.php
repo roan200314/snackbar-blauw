@@ -43,7 +43,7 @@ session_start();
                 if ($result = mysqli_query($mysqli, $sql)) {
                     $snacks = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 }
-        ?>
+         ?>
                 <table class="table">
                     <thead>
                         <h4>snacks</h4>
